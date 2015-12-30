@@ -115,10 +115,6 @@ hr {
   padding: 20px 0;
 }
 
-#team .title {
-  text-align: center; 
-  text-transform: uppercase;
-}
 
 #team h6 {
   color: #009988;
@@ -151,7 +147,8 @@ hr {
   cursor: pointer;
 }
 
-#sobre .title {
+.title {
+  text-align: center; 
   text-transform: uppercase;
 }
 
@@ -164,6 +161,26 @@ header > .main img.headerbg {
   max-height: 287px;
 }
 
+#contact ul {
+  list-style: none;
+  font-size: 0;
+}
+
+#contact ul li {
+  display: inline-block;
+  margin-bottom: 0;
+}
+
+#contact a {
+  font-size: 40px;
+  background-color: initial;
+  box-shadow: none;
+  margin-left: 45px;
+}
+
+#contact li:first-child a {
+  margin-left: 0;
+}
 
 @media (min-width: 760px) {
   header {
