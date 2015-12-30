@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <!-- Basic Page Needs
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta charset="utf-8">
+  <title>YouLie</title>
+  <meta name="description" content="">
+  <meta name="author" content="Rafael L. Toscano">
+
+  <!-- Mobile Specific Metas
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- CSS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/skeleton.css">
+  <link rel="stylesheet" href="css/main.css">
+
+  <!-- Favicon
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="icon" type="image/png" href="images/favicon.png">
+
+  <script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
+  <script type="text/javascript" src="js/anime-anchor.js"></script>
+
+  <script type="text/javascript">
+    // Voltar ao topo
+    $(document).ready( function () {
+      $('.top').on('click', function (e) {
+        console.log('scroll', e);
+        e.preventDefault();
+        $('html, body').animate({scrollTop: 0}, 800);
+      });
+    });
+    
+
+    $(window).scroll(function (event) {
+      var scroll = $(window).scrollTop();
+
+      if( scroll === 0 ) {
+        $('.top').fadeOut();
+      } else {
+        $('.top').fadeIn();
+      }
+    });
+  </script>
+
+</head>
+<body>
+
+  <!-- Primary Page Layout
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <header>
+    <div class="container">
+      
+      <div class="row">
+        <div class="twelve columns">
+          <nav>
+            <ul>
+              <li><a href="#sobre" class="anchorLink">Sobre</a></li>
+              <li><a href="#team" class="anchorLink">Equipe</a></li>
+              <li><a href="#contato" class="anchorLink">Contato</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+
+     <!--  <section class="services">
+        <div class="row">
+          <div class="twelve columns">
+            <h3>My areas of expertise</h3>
+          </div>
+          <div class="twelve columns"></div>
+        </div>          
+      </section> -->
+
+    </div><!--container-->
+    <div class="row main">
+      <div class="six columns">
+        <img class="logo" src="images/lietome.png">
+        <p>O detector de mentiras através de ondas neurais.</p>
+      </div>
+      <div class="six columns">
+        <img class="headerbg" src="images/headerbg.png">
+      </div>        
+    </div>
+
+    <img id="triangle" src="images/symbol1.png">
+  </header>
+
+  <section id="sobre" class="container">
+    <h4 class="title">Sobre</h4>
+    <hr class="divisor">
+
+    <div class="row">
+      <div class="four columns item">
+        <h4>Treinamento</h4>
+        <span class="fa fa-picture-o"></span>
+        <p>Posicione o Emotiv na cabeça da pessoa que você deseja testar com o "Lie to Me". Depois, quando todos os pontos estiverem verdes na tela, faça X perguntas cujas verdades são conhecidas.</p>
+      </div>
+      <div class="four columns item">
+        <h4>Perguntas</h4>
+        <span class="fa fa-picture-o"></span>
+        <p>Após o treinamento inicial, faça perguntas para saber se o usuário está mentindo ou falando a verdade.</p>
+      </div>
+      <div class="four columns item">
+        <h4>Verdade</h4>
+        <span class="fa fa-picture-o"></span>
+        <p>O "Lie to Me" indicará um gráfico final indicando se o usuário falou verdade ou mentira.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="team">
+    <div class="container">
+      <h4 class="title white">Equipe</h4>
+      <hr class="divisor">
+      <div class="row">
+        <div class="three columns">
+          <div class="team-wrapper">
+            <img src="images/avatar/thomaz.jpg" class="image-responsive">
+            <div class="info">
+              <h5>RAFAEL TOMAZ</h5>
+              <h6>PESQUISADOR</h6>
+            </div>
+          </div>
+        </div>  
+        <div class="three columns">
+          <div class="team-wrapper">
+            <img src="images/avatar/toscano.jpg" class="image-responsive">
+            <div class="info">
+              <h5>RAFAEL TOSCANO</h5>
+              <h6>WEBDEVELOPER</h6>
+            </div>
+          </div>
+        </div>  
+        <div class="three columns">
+          <div class="team-wrapper">
+              <img src="images/avatar/papani.jpg" class="image-responsive">
+              <div class="info">
+                <h5>CARLOS PAPANI</h5>
+                <h6>VIADO</h6>
+              </div>
+          </div>
+        </div>
+        <div class="three columns">
+          <div class="team-wrapper">
+              <img src="images/avatar/thales.jpg" class="image-responsive">
+              <div class="info">
+                <h5>THALES CUNHA</h5>
+                <h6>Observador</h6>
+              </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">      
+        <div class="four columns">
+          <div class="team-wrapper">
+              <img src="images/avatar/jovem.jpg" class="image-responsive">
+              <div class="info">
+                <h5>JOVEM</h5>
+                <h6>Q.A.</h6>
+              </div>
+          </div>
+        </div>
+        <div class="four columns">
+          <div class="team-wrapper">
+              <img src="images/avatar/pedro.jpg" class="image-responsive">
+              <div class="info">
+                <h5>PEDRO VIANA</h5>
+                <h6>DEVOPS</h6>
+              </div>
+          </div>
+        </div>
+        <div class="four columns">
+          <div class="team-wrapper">
+              <img src="images/avatar/french.jpg" class="image-responsive">
+              <div class="info">
+                <h5>"FRENSCH" FRIES</h5>
+                <h6>DESENVOLVEDOR</h6>
+              </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contato" class="container">
+    <h2>Contato</h2>
+    
+    <div class="row">
+      <div class="four columns">
+        <h4>Treinamento</h4>
+        <span class="fa fa-picture-o"></span>
+        <p>Posicione o Emotiv na cabeça da pessoa que você deseja testar com o "Lie to Me". Depois, quando todos os pontos estiverem verdes na tela, faça X perguntas cujas verdades são conhecidas.</p>
+      </div>
+      <div class="four columns">
+        <h4>Perguntas</h4>
+        <span class="fa fa-picture-o"></span>
+        <p>Após o treinamento inicial, faça perguntas para saber se o usuário está mentindo ou falando a verdade.</p>
+      </div>
+      <div class="four columns">
+        <h4>Verdade</h4>
+        <span class="fa fa-picture-o"></span>
+        <p>O "Lie to Me" indicará um gráfico final indicando se o usuário falou verdade ou mentira.</p>
+      </div>
+    </div>
+  </section>
+
+  <img src="images/top.png" class="top" alt="Ir para o topo" title="Ir para o topo"></img>
+
+<!-- End Document
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+</body>
+</html>
